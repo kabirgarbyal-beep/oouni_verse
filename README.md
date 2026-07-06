@@ -8,19 +8,18 @@ This is a **pure static site** — no build step required.
 
 ### Cloudflare Pages
 
-1. Drag and drop the `oni/` folder into Cloudflare Pages
+1. Drag and drop the repo root into Cloudflare Pages
 2. Or connect your GitHub repo and set:
    - **Build command:** (empty)
-   - **Output directory:** `oni`
+   - **Output directory:** `/` (root)
 
 ### Local Preview
 
-Just open `oni/index.html` in your browser. No server needed.
+Just open `index.html` in your browser. No server needed.
 
 ## Structure
 
 ```
-oni/
 ├── index.html          # Homepage
 ├── shop.html           # Shop catalog
 ├── product.html        # Single product view
