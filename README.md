@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ऊनीverse — Don't Yawn, Just Yarn
 
-# Run and deploy your AI Studio app
+Premium handcrafted crochet creations made with love in Haldwani, India.
 
-This contains everything you need to run your app locally.
+## Deployment
 
-View your app in AI Studio: https://ai.studio/apps/2e787b66-7a9b-47ef-8623-ed186c695ffd
+This is a **pure static site** — no build step required.
 
-## Run Locally
+### Cloudflare Pages
 
-**Prerequisites:**  Node.js
+1. Drag and drop the `oni/` folder into Cloudflare Pages
+2. Or connect your GitHub repo and set:
+   - **Build command:** (empty)
+   - **Output directory:** `oni`
 
+### Local Preview
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Just open `oni/index.html` in your browser. No server needed.
+
+## Structure
+
+```
+oni/
+├── index.html          # Homepage
+├── shop.html           # Shop catalog
+├── product.html        # Single product view
+├── custom.html         # Custom orders / Loom Studio
+├── gallery.html        # Pinterest-style gallery
+├── about.html          # Our story
+├── contact.html        # Contact form
+├── 404.html            # Custom 404 page
+├── _redirects          # Cloudflare Pages clean URLs
+├── css/                # Stylesheets
+├── js/                 # JavaScript modules
+└── assets/             # Images and icons
+```
+
+## Tech Stack
+
+- HTML5
+- CSS3 (custom utility classes)
+- Vanilla JavaScript (no frameworks)
+- Google Fonts (Cormorant Garamond, DM Sans, Manrope)
